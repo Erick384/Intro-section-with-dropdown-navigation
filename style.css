@@ -1,50 +1,66 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-.nav{
-    display: flex;
-    justify-content: space-between;
+body {
+  display: grid;
+  grid-template-rows: auto auto;
+  background-color: hsl(212, 45%, 89%);
 }
-.menu ul{
-    display: flex;
-    gap: 1rem;
+.nav {
+  display: flex;
+  justify-content: space-between;
 }
-.menu ul li{
-    list-style-type: none;
-    justify-content: space-between;
+.menu ul {
+  display: flex;
+  gap: 1rem;
 }
-.menu ul li a{
-    text-decoration: none;
-    color: black;
-
+.menu ul li {
+  list-style-type: none;
+  justify-content: space-between;
 }
-.login{
-    display: flex;
-    gap: 1rem;
+.menu ul li a {
+  text-decoration: none;
+  color: black;
 }
-.login li{
-    list-style-type: none;
+.login {
+  display: flex;
+  gap: 1rem;
 }
-.login li a{
-    text-decoration: none;
-    color: black;
+.login li {
+  list-style-type: none;
 }
-.container{
- display: grid;
- grid-template-columns: auto auto;
- grid-template-rows: repeat(4, 1fr);
+.login li a {
+  text-decoration: none;
+  color: black;
 }
-.left{
-
+.container {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: minmax(100px, auto);
+  width: 70%;
+  margin-left: 15%;
 }
-.right{
-    background-image: url(./images/image-hero-desktop.png);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 100%;
-    width: 100%;
-    border-radius: 15px;
+.image {
+  grid-column: 2;
+  grid-row: 1/10;
+  background-image: url(./images/image-hero-desktop.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+}
+.part1 {
+  grid-row: 1 /2;
+}
+.part2 {
+  grid-row: 3/4;
+}
+.part4 {
+  grid-row: 6;
+  display: flex;
+  gap: 1rem;
 }
