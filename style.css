@@ -19,6 +19,21 @@ body {
     display: flex;
     gap: 2.5rem;
 }
+.dropdown{
+  overflow: hidden;
+  display: none;
+  position: absolute;
+  top: 60px;
+}
+.dropdown ul{
+  display: inherit;
+}
+.dropdown ul li{
+  width: 170px;
+  float: none;
+  display: list-item;
+  position: relative;
+}
 .menu ul {
   display: flex;
   gap: 2rem;
@@ -59,7 +74,7 @@ body {
 .left {
   display: flex;
   flex-direction: column;
-  gap: 4rem;
+  gap: 3rem;
   padding: 3rem 6.5rem 0 0;
 }
 .image {
